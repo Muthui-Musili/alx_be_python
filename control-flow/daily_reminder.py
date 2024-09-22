@@ -21,10 +21,7 @@ match priority:
         reminder = f"'{task}' has an unspecified priority"
 
 # Modify the reminder based on time sensitivity
-if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
-else:
-    reminder += ". Consider completing it when you have free time."
-
-# Print the customized reminder
-print(f"\nReminder: {reminder}")
+if time_bound == "yes" or priority == "high":
+    print(f"Reminder: {reminder} that requires immediate attention today!")
+elif time_bound == "no":
+    print(f"Note: {reminder}. Consider completing it when you have free time.")
