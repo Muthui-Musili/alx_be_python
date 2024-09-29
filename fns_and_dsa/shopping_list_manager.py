@@ -1,11 +1,10 @@
 # shopping_list_manager.py
-
 def display_menu():
     print(f"\nShopping List Manager")
-    print(f"1. Add Item")
-    print(f"2. Remove Item")
-    print(f"3. View List")
-    print(f"4. Exit")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
 
 def main():
     shopping_list = []
@@ -33,14 +32,14 @@ def main():
                 for i, item in enumerate(shopping_list, 1):
                     print(f"{i}. {item}")
             else:
-                print(f"\nYour shopping list is empty.")
+                print("\nYour shopping list is empty.")
         
         elif choice == '4':
-            print(f"Goodbye!")
+            print("Goodbye!")
             break
         
         else:
-            print(f"Invalid choice. Please try again.")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
